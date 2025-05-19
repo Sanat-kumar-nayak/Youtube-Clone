@@ -10,7 +10,6 @@ const WatchPage = () => {
   }, []);
 
   const [searchParams] = useSearchParams();
-  console.log(searchParams.get("v"));
   return (
     <div className="px-12">
       <iframe
@@ -24,6 +23,7 @@ const WatchPage = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
+      <div></div>
     </div>
   );
 };
